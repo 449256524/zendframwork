@@ -14,9 +14,76 @@
     "require": {
         "php": "^5.6 || ^7.0",
         "zendframework/zend-component-installer": "^1.0 || ^0.7 || ^1.0.0-dev@dev",
-        "zendframework/zend-skeleton-installer": "^1.0 || ^0.1.3 || ^1.0.0-dev@dev",
         "zendframework/zend-mvc": "^3.0.1",
-        "zfcampus/zf-development-mode": "^3.0"
+        "zfcampus/zf-development-mode": "^3.0",
+        "zendframework/zend-authentication":"*",
+        "zendframework/zend-test":"*",
+        "zendframework/zend-barcode":"*",
+        "zendframework/zend-cache":"*",
+        "zendframework/zend-captcha":"*",
+        "zendframework/zendcloud":"*",
+        "zendframework/zend-config":"*",
+        "zendframework/zend-console":"*",
+        "zendframework/zend-crypt":"*",
+        "zendframework/zend-db":"*",
+        "zendframework/zend-debug":"*",
+        "zendframework/zend-di":"*",
+        "zendframework/zend-code":"*",
+        "zendframework/zend-dom":"*",
+        "zendframework/zend-escaper":"*",
+        "zendframework/zend-eventmanager":"*",
+        "zendframework/zend-feed":"*",
+        "zendframework/zend-file":"*",
+        "zendframework/zend-filter":"*",
+        "zendframework/zend-form":"*",
+        "zendframework/zendgdata":"*",
+        "zendframework/zend-http":"*",
+        "zendframework/zend-i18n":"*",
+        "zendframework/zend-inputfilter":"*",
+        "zendframework/zend-json":"*",
+        "zendframework/zend-ldap":"*",
+        "zendframework/zend-loader":"*",
+        "zendframework/zend-log":"*",
+        "zendframework/zend-mail":"*",
+        "zendframework/zend-math":"*",
+        "zendframework/zend-memory":"*",
+        "zendframework/zend-mime":"*",
+        "zendframework/zend-modulemanager":"*",
+        "zendframework/zend-navigation":"*",
+        "zendframework/zendoauth":"*",
+        "zendframework/zendopenid":"*",
+        "zendframework/zend-paginator":"*",
+        "zendframework/zendpdf":"*",
+        "zendframework/zend-permissions-acl":"*",
+        "zendframework/zend-permissions-rbac":"*",
+        "zendframework/zend-progressbar":"*",
+        "zendframework/zendrest":"*",
+        "zendframework/zend-serializer":"*",
+        "zendframework/zend-server":"*",
+        "zendframework/zendservice-agilezen":"*",
+        "zendframework/zendservice-akismet":"*",
+        "zendframework/zendservice-amazon":"*",
+        "zendframework/zendservice-gogrid":"*",
+        "zendframework/zendservice-livedocx":"*",
+        "zendframework/zend-servicemanager":"*",
+        "zendframework/zendservice-nirvanix":"*",
+        "zendframework/zendservice-rackspace":"*",
+        "zendframework/zendservice-recaptcha":"*",
+        "zendframework/zendservice-slideshare":"*",
+        "zendframework/zendservice-strikeiron":"*",
+        "zendframework/zendservice-technorati":"*",
+        "zendframework/zendservice-twitter":"*",
+        "zendframework/zendservice-windowsazure":"*",
+        "zendframework/zend-session":"*",
+        "zendframework/zend-soap":"*",
+        "zendframework/zend-stdlib":"*",
+        "zendframework/zend-tag":"*",
+        "zendframework/zend-text":"*",
+        "zendframework/zend-uri":"*",
+        "zendframework/zend-validator":"*",
+        "zendframework/zend-version":"*",
+        "zendframework/zend-view":"*",
+        "zendframework/zend-xmlrpc":"*"
     },
     "autoload": {
         "psr-4": {
@@ -28,94 +95,16 @@
             "ApplicationTest\\": "module/Application/test/"
         }
     },
-    "extra": {
-        "zend-skeleton-installer": [
-            {
-                "name": "zendframework/zend-developer-tools",
-                "constraint": "^1.1.0",
-                "prompt": "Would you like to install the developer toolbar?",
-                "module": true,
-                "dev": true
-            },
-            {
-                "name": "zendframework/zend-cache",
-                "constraint": "^2.7.1",
-                "prompt": "Would you like to install caching support?",
-                "module": true
-            },
-            {
-                "name": "zendframework/zend-db",
-                "constraint": "^2.8.1",
-                "prompt": "Would you like to install database support (installs zend-db)?",
-                "module": true
-            },
-            {
-                "name": "zendframework/zend-mvc-form",
-                "constraint": "^1.0",
-                "prompt": "Would you like to install forms support?",
-                "module": true
-            },
-            {
-                "name": "zendframework/zend-json",
-                "constraint": "^3.0",
-                "prompt": "Would you like to install JSON de/serialization support?"
-            },
-            {
-                "name": "zendframework/zend-log",
-                "constraint": "^2.9",
-                "prompt": "Would you like to install logging support?",
-                "module": true
-            },
-            {
-                "name": "zendframework/zend-mvc-console",
-                "constraint": "^1.1.10",
-                "prompt": "Would you like to install MVC-based console support? (We recommend migrating to zf-console, symfony/console, or Aura.CLI)",
-                "module": true
-            },
-            {
-                "name": "zendframework/zend-mvc-i18n",
-                "constraint": "^1.0",
-                "prompt": "Would you like to install i18n support?",
-                "module": true
-            },
-            {
-                "name": "zendframework/zend-mvc-plugins",
-                "constraint": "^1.0.1",
-                "prompt": "Would you like to install the official MVC plugins, including PRG support, identity, and flash messages?",
-                "module": true
-            },
-            {
-                "name": "zendframework/zend-psr7bridge",
-                "constraint": "^0.2.2",
-                "prompt": "Would you like to use the PSR-7 middleware dispatcher?"
-            },
-            {
-                "name": "zendframework/zend-session",
-                "constraint": "^2.7.1",
-                "prompt": "Would you like to install sessions support?",
-                "module": true
-            },
-            {
-                "name": "zendframework/zend-test",
-                "constraint": "^3.0.1",
-                "prompt": "Would you like to install MVC testing support?",
-                "dev": true
-            },
-            {
-                "name": "zendframework/zend-servicemanager-di",
-                "constraint": "^1.0",
-                "prompt": "Would you like to install the zend-di integration for zend-servicemanager?",
-                "module": true
-            }
-        ]
-    },
+    "extra": [],
     "scripts": {
         "cs-check": "phpcs",
         "cs-fix": "phpcbf",
         "development-disable": "zf-development-mode disable",
         "development-enable": "zf-development-mode enable",
         "development-status": "zf-development-mode status",
-        "post-create-project-cmd": ["@development-enable"],
+        "post-create-project-cmd": [
+            "@development-enable"
+        ],
         "serve": "php -S 0.0.0.0:8080 -t public public/index.php",
         "test": "phpunit"
     }
