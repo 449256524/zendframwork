@@ -8,7 +8,7 @@ use Zend\Stdlib\ArrayUtils;
  * to the application root now.
  */
 chdir(dirname(__DIR__));
-var_dump(realpath(__DIR__ . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)));exit();
+
 // Decline static file requests back to the PHP built-in webserver
 if (php_sapi_name() === 'cli-server') {
     $path = realpath(__DIR__ . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
@@ -17,7 +17,7 @@ if (php_sapi_name() === 'cli-server') {
     }
     unset($path);
 }
-
+var_dump(1);exit();
 // Composer autoloading
 include __DIR__ . '/../vendor/autoload.php';
 
