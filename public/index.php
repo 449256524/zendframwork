@@ -17,7 +17,7 @@ if (php_sapi_name() === 'cli-server') {
     }
     unset($path);
 }
-var_dump(1);exit();
+
 // Composer autoloading
 include __DIR__ . '/../vendor/autoload.php';
 

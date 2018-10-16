@@ -16,4 +16,10 @@ class IndexController extends AbstractActionController
     {
         return new ViewModel();
     }
+
+    public function liyuAction()
+    {
+        echo 'liyu';exit();
+        return;
+    }
 }
