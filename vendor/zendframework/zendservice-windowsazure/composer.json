@@ -1,0 +1,35 @@
+{
+    "name": "zendframework/zendservice-windowsazure",
+    "description": "OOP wrapper for the WindowsAzure web service",
+    "type": "library",
+    "keywords": [
+        "zf2",
+        "windows",
+        "azure"
+    ],
+    "homepage": "http://packages.zendframework.com/",
+    "license": "BSD-3-Clause",
+    "autoload": {
+        "psr-0": {
+            "ZendService\\WindowsAzure\\": "library/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.zendframework.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zend-http": "~2.0",
+        "zendframework/zend-uri": "~2.0",
+        "zendframework/zend-version": "~2.0",
+        "zendframework/zendxml": "~1.0-dev"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
+}
