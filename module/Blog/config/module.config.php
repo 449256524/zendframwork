@@ -7,7 +7,7 @@
  */
 
 namespace Blog;
-
+echo '1';exit();
 return array(
     // 该行为 RouteManager 打开配置
     'router' => array(
